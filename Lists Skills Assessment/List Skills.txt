@@ -1,0 +1,19 @@
+Due Friday, October 5th, 2018
+quiz_answers.txt
+Please fill in your answers to the knowledge quiz below.
+
+1) D
+2) D
+3) A
+4) A
+5) B
+6) B
+7) D
+8) A
+9) D
+10) D
+11) C - idk what a constructor function is ¯\_(ツ)_/¯ 
+12) A
+13) argument
+14) Git is computer-based version control, GitHub is (a company) web-based version control
+15) In Python, they're not technically variables even though we call them variables. Python stores variables in its own space, once you change the variable there is no way for you to reuse that space of data again (it takes up empty space until the program ends). In C you could direct/redirect variables into data space which helps optimize the program.
