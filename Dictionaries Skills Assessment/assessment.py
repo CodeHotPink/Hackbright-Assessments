@@ -140,6 +140,8 @@ def translate_to_pirate_talk(phrase):
 
 
 def kids_game(names):
+    """2 hrs 20 mins on this single one. The first time aorund I misread what
+    it was asking for. Now I'm rewriting it but I'm still taking a while"""
     """Play a kids' word chain game.
 
     Given a list of names, like::
@@ -184,12 +186,46 @@ def kids_game(names):
     a dictionary (with the super-fast lookup they provide) can help;
     good solutions here will definitely require a dictionary.
     """
-    word_chain = set()
-    word_chain.add(names[0])
-    for word in names:
-        
+    """def generate_names_dictionary(names):
+        creates names into dictionary using the first letter
+        of each word as the key, value will be list of words that start with
+        first letter (the key).
+        names_look_up_dictionary = {}
+        for word in names:
+            names_look_up_dictionary[word[0]] = names_look_up_dictionary.get(word[0],[])
+            names_look_up_dictionary[word[0]].append(word)
+        return names_look_up_dictionary
 
-    return []
+    def find_first_matching_word(last_letter,names):
+        finds first word whose first letter matches the last letter of the
+        previous word
+        for word in names:
+            if last_letter == word[0]:
+                return word
+
+    def update_name_list(current_word, names):
+        updates name_list so we will not pick that name again
+        names.remove(current_word)
+        return names
+    names = update_name_list(word, names)
+
+    # try to loop using boolean of the various list. Once key in names_list is
+    #empty then return false. 
+    names_list = generate_names_dictionary(names)
+    word_chain = []
+    word_chain.append(names_list[0])
+
+    matching_word = find_first_matching_word(word[-1],names)
+    names = update_name_list(matching_word, names)
+    word_chain.append(matching_word)
+
+        word_chain.update([word])
+        names_list[word[-1]].remove(word)
+        names.remove(word)
+    print(word_chain)
+
+
+    return []"""
 
 #####################################################################
 # You can ignore everything below this.
